@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vkart/pages/home_page.dart';
 
 void main() => runApp(VkartApp());
 
@@ -10,14 +11,7 @@ class VkartApp extends StatelessWidget {
     return MaterialApp(
       title: appTitle,
       theme: ThemeData(primarySwatch: Colors.pink),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(appTitle),
-        ),
-        body: Center(
-          child: Text('Welcome to Vkart!'),
-        ),
-      ),
+      home: HomePage(title: appTitle),
     );
   }
 }
